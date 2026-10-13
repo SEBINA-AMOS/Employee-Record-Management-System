@@ -1,0 +1,148 @@
+/* Hexagonal Vault Canvas Container */
+#hexagonal-vault-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: #070b14;
+}
+
+/* Smooth Cursor Styles */
+.smooth-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate3d(-100px, -100px, 0);
+  margin-top: -4px;
+  margin-left: -4px;
+  box-shadow: 0 0 10px #38bdf8, 0 0 20px #818cf8;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.smooth-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(56, 189, 248, 0.65);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate3d(-100px, -100px, 0);
+  margin-top: -19px;
+  margin-left: -19px;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease,
+              background-color 0.25s ease,
+              margin 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease;
+  opacity: 0;
+}
+
+.smooth-cursor-ring.cursor-hovering {
+  width: 58px;
+  height: 58px;
+  margin-top: -29px;
+  margin-left: -29px;
+  border-color: #d946ef;
+  background-color: rgba(217, 70, 239, 0.08);
+  box-shadow: 0 0 25px rgba(217, 70, 239, 0.4);
+}
+
+.smooth-cursor-ring.cursor-clicking {
+  width: 28px;
+  height: 28px;
+  margin-top: -14px;
+  margin-left: -14px;
+  border-color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.25);
+}
+
+.smooth-cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: rgba(99, 102, 241, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99997;
+  transform: translate3d(-100px, -100px, 0);
+  margin-top: -3px;
+  margin-left: -3px;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Glassmorphism Vault Card */
+.vault-glass-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(13, 20, 36, 0.78) !important;
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1px solid rgba(56, 189, 248, 0.18) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(56, 189, 248, 0.12) !important;
+  color: #f8fafc !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vault-glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.75), 0 0 45px rgba(56, 189, 248, 0.28) !important;
+}
+
+/* Interactive Form Inputs */
+.vault-glass-card .form-control {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+  border-radius: 0.65rem !important;
+  transition: all 0.25s ease;
+}
+
+.vault-glass-card .form-control:focus {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.35) !important;
+}
+
+.vault-glass-card .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Modern Glowing Buttons */
+.vault-btn {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #7c3aed 100%) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em;
+  border-radius: 0.65rem !important;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.vault-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.55) !important;
+  color: #ffffff !important;
+}

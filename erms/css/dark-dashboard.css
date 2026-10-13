@@ -1,0 +1,349 @@
+/* =====================================================
+   ERMS Dark Dashboard Theme
+   Applied to all internal pages (sidebar + header + content)
+   Transparent layered design so Spectral Drape 3D waves show through!
+   ===================================================== */
+
+/* Body & main wrappers */
+body#page-top {
+  background: #070b14 !important;
+  color: #e2e8f0;
+}
+
+#wrapper {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+#content-wrapper {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+#content {
+  background: transparent !important;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---- Sidebar ---- */
+.sidebar,
+.sidebar.bg-gradient-primary {
+  background: rgba(12, 18, 34, 0.88) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.6);
+  border-right: 1px solid rgba(56, 189, 248, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.sidebar .sidebar-brand {
+  background: rgba(56, 189, 248, 0.08);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+.sidebar .sidebar-brand-text {
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.sidebar .sidebar-brand-icon {
+  color: #38bdf8 !important;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  border-radius: 0.5rem;
+  margin: 2px 8px;
+  padding: 0.65rem 1rem !important;
+}
+
+.sidebar .nav-link:hover {
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.12);
+  transform: translateX(3px);
+}
+
+.sidebar .nav-link i {
+  color: rgba(255, 255, 255, 0.4) !important;
+  transition: color 0.25s ease;
+}
+
+.sidebar .nav-link:hover i {
+  color: #38bdf8 !important;
+}
+
+.sidebar .nav-item.active .nav-link {
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.18);
+  border-left: 3px solid #38bdf8;
+}
+
+.sidebar .sidebar-heading {
+  color: rgba(148, 163, 184, 0.6) !important;
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.sidebar .sidebar-divider,
+.sidebar hr {
+  border-color: rgba(56, 189, 248, 0.1) !important;
+}
+
+.sidebar #sidebarToggle {
+  background: rgba(56, 189, 248, 0.15) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+}
+
+.sidebar #sidebarToggle::after {
+  color: #38bdf8 !important;
+}
+
+/* ---- Topbar ---- */
+.topbar,
+.navbar.bg-white {
+  background: rgba(10, 15, 29, 0.78) !important;
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12) !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45) !important;
+  position: relative;
+  z-index: 9;
+}
+
+.topbar .nav-link {
+  color: #94a3b8 !important;
+}
+
+.topbar .nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+.topbar .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+.topbar .topbar-divider {
+  border-color: rgba(56, 189, 248, 0.15) !important;
+}
+
+.topbar .dropdown-menu {
+  background: rgba(17, 24, 39, 0.95) !important;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.2) !important;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6) !important;
+}
+
+.topbar .dropdown-item {
+  color: #cbd5e1 !important;
+  transition: all 0.2s ease;
+}
+
+.topbar .dropdown-item:hover {
+  background: rgba(56, 189, 248, 0.15) !important;
+  color: #38bdf8 !important;
+}
+
+.topbar .dropdown-divider {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* ---- Page Heading ---- */
+.text-gray-800 {
+  color: #f1f5f9 !important;
+}
+
+/* ---- Dashboard Glass Cards Floating on Drape ---- */
+.card {
+  background: rgba(13, 20, 36, 0.76) !important;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(56, 189, 248, 0.18) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55), 0 0 25px rgba(56, 189, 248, 0.1) !important;
+  color: #e2e8f0 !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.45) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 35px rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Neon left border accents */
+.card.border-left-primary {
+  border-left: 4px solid #6366f1 !important;
+}
+
+.card.border-left-success {
+  border-left: 4px solid #10b981 !important;
+}
+
+.card.border-left-info {
+  border-left: 4px solid #38bdf8 !important;
+}
+
+.card.border-left-warning {
+  border-left: 4px solid #f59e0b !important;
+}
+
+.card .text-primary {
+  color: #818cf8 !important;
+}
+
+.card .text-success {
+  color: #34d399 !important;
+}
+
+.card .text-info {
+  color: #38bdf8 !important;
+}
+
+.card .text-gray-300 {
+  color: rgba(148, 163, 184, 0.5) !important;
+}
+
+.card .h5,
+.card .font-weight-bold {
+  color: #f1f5f9 !important;
+}
+
+/* ---- Tables ---- */
+.table {
+  color: #cbd5e1 !important;
+}
+
+.table thead th {
+  background: rgba(56, 189, 248, 0.12);
+  color: #94a3b8;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2) !important;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.table td,
+.table th {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.table tbody tr:hover {
+  background: rgba(56, 189, 248, 0.08) !important;
+}
+
+/* ---- Forms ---- */
+.form-control {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.25s ease;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.35) !important;
+  color: #ffffff !important;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+select.form-control {
+  background-color: rgba(13, 20, 36, 0.95) !important;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 50%, #38bdf8 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(99, 102, 241, 0.4) !important;
+  transition: all 0.25s ease !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6) !important;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.4) !important;
+}
+
+.btn-info {
+  background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%) !important;
+  border: none !important;
+}
+
+/* ---- Footer ---- */
+.sticky-footer,
+.sticky-footer.bg-white {
+  background: rgba(10, 15, 29, 0.75) !important;
+  border-top: 1px solid rgba(56, 189, 248, 0.1) !important;
+  color: #64748b !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---- Scroll to Top ---- */
+.scroll-to-top {
+  background: rgba(56, 189, 248, 0.25) !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  z-index: 99;
+}
+
+.scroll-to-top i {
+  color: #38bdf8 !important;
+}
+
+/* ---- Misc Overrides ---- */
+.bg-white {
+  background-color: transparent !important;
+}
+
+.shadow {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45) !important;
+}
+
+a {
+  color: #38bdf8;
+}
+
+a:hover {
+  color: #7dd3fc;
+}
+
+.text-gray-600 {
+  color: #94a3b8 !important;
+}
+
+.text-gray-400 {
+  color: #64748b !important;
+}
